@@ -49,9 +49,6 @@ ultra.addEventListener("keyup", (evt) => {
         "research",
         "https://www.are.na/lakeisha-sharonina/thesis-2-hhmtqcsveck"
       );
-    } else if (
-      newJit.lastElementChild.textContent.toLowerCase() === "research 2"
-    ) {
       openSpecificImages([
         "chia-2.png",
         "chia.png",
