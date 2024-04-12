@@ -40,7 +40,7 @@ ultra.addEventListener("keyup", (evt) => {
         "final3.gif",
         "final4.jpg",
         "final5.jpg",
-        "final6.jpg",
+        "final6.gif",
       ]);
     } else if (
       newJit.lastElementChild.textContent.toLowerCase() === "research"
@@ -68,6 +68,7 @@ ultra.addEventListener("keyup", (evt) => {
         "scanned004.png",
         "scanned005.png",
         "scanned006.png",
+        "cover.png",
         // "scanned007.png",
       ]);
     } else if (
@@ -122,6 +123,10 @@ ultra.addEventListener("keyup", (evt) => {
         "5.gif",
         "6.gif",
       ]);
+      createNewWindow(
+        "hand",
+        "https://editor.p5js.org/lakeishaa/full/TkAX6AHmQ"
+      );
     } else if (
       newJit.lastElementChild.textContent.toLowerCase() === "description"
     ) {
@@ -215,12 +220,14 @@ const texts = [
   "THE DIGITAL GAZE",
   "The web as a design tool",
   "The webcam and your positionality as a user",
+  "The performer is the audience, audience is performer",
   "When you click ALLOW you give  a part of yourself to the web",
   "Looking at all the different ways people are interacting with the web",
   "Human connection and collaboartion",
-  "The web as a design tool",
-  "The web as self expression",
+  "Identity, surveillance, user positionality",
   "The web as a tool to connect people",
+  "The web as self expression",
+  "THE DIGITAL GAZE",
 ]; // Add more texts as needed
 let currentIndex = 0;
 
