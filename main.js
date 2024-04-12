@@ -40,6 +40,7 @@ ultra.addEventListener("keyup", (evt) => {
         "final3.gif",
         "final4.jpg",
         "final5.jpg",
+        "final6.jpg",
       ]);
     } else if (
       newJit.lastElementChild.textContent.toLowerCase() === "research"
@@ -69,6 +70,10 @@ ultra.addEventListener("keyup", (evt) => {
         "scanned006.png",
         // "scanned007.png",
       ]);
+    } else if (
+      newJit.lastElementChild.textContent.toLowerCase() === "website"
+    ) {
+      openSpecificImages(["demo.mp4"]);
     } else if (
       newJit.lastElementChild.textContent.toLowerCase() === "exploration 2"
     ) {
