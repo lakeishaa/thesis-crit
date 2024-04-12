@@ -19,7 +19,9 @@ ultra.addEventListener("keyup", (evt) => {
     if (newJit.lastElementChild.textContent.toLowerCase() === "end") {
       // Call the closeWindow function to close the current window
       closeWindow();
-    } else if (newJit.lastElementChild.textContent.toLowerCase() === "256") {
+    } else if (
+      newJit.lastElementChild.textContent.toLowerCase() === "exploration"
+    ) {
       openSpecificImages([
         "256-1.jpg",
         "256-2.jpg",
@@ -27,46 +29,45 @@ ultra.addEventListener("keyup", (evt) => {
         "256-4.jpg",
         "256-5.jpg",
       ]);
+    } else if (newJit.lastElementChild.textContent.toLowerCase() === "ideas") {
+      createNewWindow("ideas", "ideas.html");
     } else if (
-      newJit.lastElementChild.textContent.toLowerCase() === "design sprint"
-    ) {
-      createNewWindow("design sprint", "designsprint.html");
-    } else if (
-      newJit.lastElementChild.textContent.toLowerCase() === "ugly design"
+      newJit.lastElementChild.textContent.toLowerCase() === "the digital gaze"
     ) {
       openSpecificImages([
-        "ugly-1.jpg",
-        "ugly-2.jpg",
-        "ugly-3.jpg",
-        "ugly-4.jpg",
-        "ugly-5.jpg",
-        ,
-        "ugly-6.jpg",
-        "ugly-7.jpg",
+        "final1.gif",
+        "final2.jpg",
+        "final3.gif",
+        "final4.jpg",
+        "final5.jpg",
       ]);
     } else if (
       newJit.lastElementChild.textContent.toLowerCase() === "research"
     ) {
       createNewWindow(
         "research",
-        "https://www.are.na/lakeisha-sharonina/thesis-zjyf7d9cqn8"
+        "https://www.are.na/lakeisha-sharonina/thesis-2-hhmtqcsveck"
       );
     } else if (
       newJit.lastElementChild.textContent.toLowerCase() === "research 2"
     ) {
-      createNewWindows("research 2", [
-        "https://boniver.withspotify.com/",
-        // "https://yhsong.com/",
-        // "https://minimoogmodeld.com/",
-      ]);
-    } else if (
-      newJit.lastElementChild.textContent.toLowerCase() === "exploration 1"
-    ) {
       openSpecificImages([
-        "exploration-1.jpg",
-        "exploration-2.jpg",
-        "exploration-3.jpg",
-        "exploration-4.jpg",
+        "chia-2.png",
+        "chia.png",
+        "mattaniah.png",
+        "mattaniah-2.png",
+        "tal-1.png",
+        "tal-2.png",
+      ]);
+    } else if (newJit.lastElementChild.textContent.toLowerCase() === "book") {
+      openSpecificImages([
+        "scanned001.png",
+        "scanned002.png",
+        // "scanned003.png",
+        "scanned004.png",
+        "scanned005.png",
+        "scanned006.png",
+        // "scanned007.png",
       ]);
     } else if (
       newJit.lastElementChild.textContent.toLowerCase() === "exploration 2"
@@ -106,9 +107,16 @@ ultra.addEventListener("keyup", (evt) => {
         "experiment-5.html",
       ]);
     } else if (
-      newJit.lastElementChild.textContent.toLowerCase() === "research 4"
+      newJit.lastElementChild.textContent.toLowerCase() === "experimentation"
     ) {
-      openSpecificImages(["tal-1.png", "tal-2.png", "tal-3.png"]);
+      openSpecificImages([
+        "1.gif",
+        "2.gif",
+        "3.gif",
+        "4.gif",
+        "5.gif",
+        "6.gif",
+      ]);
     } else if (
       newJit.lastElementChild.textContent.toLowerCase() === "description"
     ) {
@@ -196,3 +204,22 @@ function closeWindow() {
   // (You can add additional handling here if needed)
 }
 // console.log(window.close());
+
+const h1 = document.querySelector("h1");
+const texts = [
+  "THE DIGITAL GAZE",
+  "The web as a design tool",
+  "The webcam and your positionality as a user",
+  "When you click ALLOW you give  a part of yourself to the web",
+  "Looking at all the different ways people are interacting with the web",
+  "Human connection and collaboartion",
+  "The web as a design tool",
+  "The web as self expression",
+  "The web as a tool to connect people",
+]; // Add more texts as needed
+let currentIndex = 0;
+
+h1.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % texts.length;
+  h1.textContent = texts[currentIndex];
+});
