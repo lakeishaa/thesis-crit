@@ -102,3 +102,80 @@ h1 {
   text-align: center;
   margin-bottom: 10px;
 }
+
+#xButton {
+  top: -32px !important;
+  right: 0px !important;
+}
+
+.hide {
+  display: block;
+}
+
+#clickx {
+  top: -32px !important;
+  right: 0px !important;
+  position: fixed;
+}
+
+.more-info {
+  display: none;
+  position: fixed;
+  top: 22.5%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  /* padding: 20px; */
+  /* border: 1px solid #ccc; */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  z-index: 998; /* Ensure the popup is below the close button overlay */
+  width: 300px;
+  font-size: 10px;
+  /* display:block; */
+  /* height: 60%; */
+  /* didplay: none; */
+}
+
+#desc-1 {
+  font-size: 15px !important;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding-left: center;
+  padding-right: center;
+  text-align: center;
+  top: 3vh;
+  position: absolute;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+#desc-1:hover {
+  cursor: pointer;
+}
+
+.hide {
+  display: block;
+}
+
+#clickx {
+  top: -32px !important;
+  right: 0px !important;
+  position: fixed;
+}
+
+#xButton {
+  top: -32px !important;
+  right: 0px !important;
+}
+
+ul,
+li {
+  font-size: 12px !important;
+  border: none !important;
+}
+
+.password {
+  list-style-type: none !important; /* Remove bullets */
+}
